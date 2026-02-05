@@ -6,11 +6,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Calendar } from '@/components/ui/calendar'
 import { Badge } from '@/components/ui/badge'
 import { ArrowLeft, ArrowRight, CalendarDays } from 'lucide-react'
+import { type DateRange } from 'react-day-picker'
 
 export default function CalendarShowcase() {
   const [date, setDate] = useState<Date | undefined>(new Date())
   const [multipleDate, setMultipleDate] = useState<Date[] | undefined>([])
-  const [rangeDate, setRangeDate] = useState<{ from?: Date; to?: Date }>({})
+  const [rangeDate, setRangeDate] = useState<DateRange | undefined>(undefined)
   const [withTimeDate, setWithTimeDate] = useState<Date | undefined>(new Date())
 
   return (
