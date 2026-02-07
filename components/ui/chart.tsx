@@ -45,10 +45,15 @@ function ChartContainer({
 
   return (
     <div
-      className={cn("w-full", className)}
-      style={cssVars as React.CSSProperties}
+      className={cn("w-full h-full", className)}
+      style={{
+        ...cssVars,
+        display: "flex",
+        width: "100%",
+        height: "100%",
+      } as React.CSSProperties}
     >
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
         {children}
       </ResponsiveContainer>
     </div>

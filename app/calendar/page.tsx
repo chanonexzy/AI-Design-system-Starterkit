@@ -1,6 +1,7 @@
 'use client'
+import Link from 'next/link'
 
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Calendar } from '@/components/ui/calendar'
@@ -8,11 +9,20 @@ import { Badge } from '@/components/ui/badge'
 import { ArrowLeft, ArrowRight, CalendarDays } from 'lucide-react'
 import { type DateRange } from 'react-day-picker'
 
+// Calculate default date range outside component to avoid impure function warning
+const getDefaultDateRange = () => {
+  const now = new Date()
+  const nextWeek = new Date()
+  nextWeek.setDate(now.getDate() + 7)
+  return { from: now, to: nextWeek }
+}
+
 export default function CalendarShowcase() {
   const [date, setDate] = useState<Date | undefined>(new Date())
   const [multipleDate, setMultipleDate] = useState<Date[] | undefined>([])
   const [rangeDate, setRangeDate] = useState<DateRange | undefined>(undefined)
-  const [withTimeDate, setWithTimeDate] = useState<Date | undefined>(new Date())
+
+  const defaultDateRange = useMemo(() => getDefaultDateRange(), [])
 
   return (
     <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
@@ -333,10 +343,7 @@ export default function CalendarShowcase() {
               <p className="text-sm font-medium mb-3">With Date Range</p>
               <Calendar
                 mode="range"
-                selected={{
-                  from: new Date(),
-                  to: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
-                }}
+                selected={defaultDateRange}
                 className="rounded-md border"
               />
             </div>
@@ -379,16 +386,16 @@ export default function CalendarShowcase() {
         {/* Navigation */}
         <div className="flex justify-between items-center pt-8 border-t">
           <Button asChild variant="outline">
-            <a href="/">
+            <Link href="/">
               <ArrowLeft />
               Back to Home
-            </a>
+            </Link>
           </Button>
           <Button asChild variant="outline">
-            <a href="/components">
+            <Link href="/components">
               View All Components
               <ArrowRight />
-            </a>
+            </Link>
           </Button>
         </div>
       </div>

@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
@@ -584,16 +585,16 @@ export default function ButtonGroupShowcase() {
         {/* Navigation */}
         <div className="flex justify-between items-center pt-8 border-t">
           <Button asChild variant="outline">
-            <a href="/">
+            <Link href="/">
               <ArrowLeft />
               Back to Home
-            </a>
+            </Link>
           </Button>
           <Button asChild variant="outline">
-            <a href="/components">
+            <Link href="/components">
               View All Components
               <ArrowRight />
-            </a>
+            </Link>
           </Button>
         </div>
       </div>

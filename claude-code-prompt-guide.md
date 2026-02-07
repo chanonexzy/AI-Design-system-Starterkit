@@ -170,7 +170,6 @@ When working with Claude Code:
 - "Generate design tokens" without providing Figma data
 - Approximate color values (use exact hex/HSL from Figma)
 - Skip any component states
-- Modify Shadcn component classes
 - Use numeric naming instead of semantic naming
 - Forget dark mode if Figma includes it
 - Skip TypeScript definitions

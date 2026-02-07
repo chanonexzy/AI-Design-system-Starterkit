@@ -134,7 +134,7 @@ export default function ChartPage() {
           </div>
 
           {/* bar chart */}
-          <div className="mt-6 h-[250px]">
+          <div className="mt-6 h-[250px] w-full" style={{ display: "block" }}>
             <ChartContainer config={CHART_CONFIG}>
               <BarChart data={DATA} margin={{ top: 8, right: 4, bottom: 4, left: 0 }}>
                 <CartesianGrid strokeDasharray="" vertical={false} stroke="#e5e7eb" />

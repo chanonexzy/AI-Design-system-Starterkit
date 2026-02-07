@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -509,10 +510,10 @@ export default function AvatarPage() {
         {/* Navigation */}
         <div className="flex justify-between items-center pt-8 border-t">
           <Button asChild variant="outline">
-            <a href="/">← Back to Home</a>
+            <Link href="/">← Back to Home</Link>
           </Button>
           <Button asChild variant="outline">
-            <a href="/components">View All Components →</a>
+            <Link href="/components">View All Components →</Link>
           </Button>
         </div>
       </div>
