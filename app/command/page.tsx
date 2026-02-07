@@ -43,7 +43,7 @@ export default function CommandPage() {
 
   return (
     <div className="min-h-screen bg-background p-14">
-      <div className="mx-auto max-w-[602px] rounded-3xl border bg-white p-14 shadow-sm">
+      <div className="mx-auto max-w-[602px] rounded-3xl border bg-card p-14 shadow-sm">
         {/* ── Header ────────────────────────────────────── */}
         <div className="flex items-start justify-between gap-4">
           <div className="flex flex-col gap-2">
@@ -123,9 +123,9 @@ export default function CommandPage() {
             className="fixed inset-0 z-50 flex items-center justify-center"
             onClick={() => setOpen(false)}
           >
-            <div className="fixed inset-0 bg-black/40" />
+            <div className="fixed inset-0 bg-background/80 backdrop-blur-sm" />
             <div
-              className="relative z-10 w-[448px] rounded-lg border bg-white shadow-lg"
+              className="relative z-10 w-[448px] rounded-lg border bg-card shadow-lg"
               onClick={(e) => e.stopPropagation()}
             >
               <Command>

@@ -1,0 +1,497 @@
+/**
+ * shadcn/ui Component Overrides
+ *
+ * IMPORTANT: This file only contains CSS custom property overrides.
+ * Never modify component structure or HTML - only override through CSS variables.
+ *
+ * All components should use tokens from design-tokens.css
+ */
+
+/* ========================================
+   Button Component Overrides
+   ======================================== */
+
+.button,
+button[class*="button"] {
+  /* Spacing */
+  --button-padding-x: var(--space-16);
+  --button-padding-y: var(--space-8);
+  --button-gap: var(--gap-2);
+
+  /* Typography */
+  --button-font-size: var(--text-sm);
+  --button-font-weight: var(--font-medium);
+
+  /* Border */
+  --button-radius: var(--radius-md);
+  --button-border-width: var(--border-width-thin);
+
+  /* Effects */
+  --button-shadow: var(--shadow-button);
+  --button-transition: var(--transition-colors);
+}
+
+.button-sm {
+  --button-padding-x: var(--space-12);
+  --button-padding-y: var(--space-6);
+  --button-font-size: var(--text-sm);
+  --button-height: 32px;
+}
+
+.button-lg {
+  --button-padding-x: var(--space-24);
+  --button-padding-y: var(--space-12);
+  --button-font-size: var(--text-lg);
+  --button-height: 48px;
+}
+
+/* ========================================
+   Input Component Overrides
+   ======================================== */
+
+.input,
+input[class*="input"] {
+  /* Spacing */
+  --input-padding-x: var(--space-12);
+  --input-padding-y: var(--space-8);
+
+  /* Typography */
+  --input-font-size: var(--text-sm);
+  --input-font-weight: var(--font-normal);
+
+  /* Border */
+  --input-radius: var(--radius-md);
+  --input-border-width: var(--border-width-thin);
+
+  /* Effects */
+  --input-transition: var(--transition-colors);
+  --input-focus-ring-width: 2px;
+  --input-focus-ring-offset: 0px;
+
+  /* Height */
+  --input-height: 40px;
+}
+
+/* ========================================
+   Card Component Overrides
+   ======================================== */
+
+.card {
+  /* Spacing */
+  --card-padding: var(--space-24);
+  --card-gap: var(--gap-16);
+
+  /* Border */
+  --card-radius: var(--radius-lg);
+  --card-border-width: var(--border-width-thin);
+
+  /* Effects */
+  --card-shadow: var(--shadow-sm);
+  --card-transition: var(--transition-all);
+}
+
+.card-sm {
+  --card-padding: var(--space-16);
+  --card-gap: var(--gap-12);
+}
+
+.card-lg {
+  --card-padding: var(--space-32);
+  --card-gap: var(--gap-20);
+}
+
+/* ========================================
+   Badge Component Overrides
+   ======================================== */
+
+.badge {
+  /* Spacing */
+  --badge-padding-x: var(--space-10);
+  --badge-padding-y: var(--space-2);
+
+  /* Typography */
+  --badge-font-size: var(--text-xs);
+  --badge-font-weight: var(--font-semibold);
+
+  /* Border */
+  --badge-radius: var(--radius-full);
+  --badge-border-width: var(--border-width-thin);
+
+  /* Height */
+  --badge-height: 22px;
+}
+
+/* ========================================
+   Dialog/Modal Component Overrides
+   ======================================== */
+
+.dialog {
+  /* Overlay */
+  --dialog-overlay-opacity: 0.8;
+  --dialog-overlay-blur: var(--backdrop-blur-sm);
+
+  /* Content */
+  --dialog-padding: var(--space-24);
+  --dialog-radius: var(--radius-lg);
+  --dialog-shadow: var(--shadow-dialog);
+  --dialog-gap: var(--gap-16);
+
+  /* Z-index */
+  --dialog-z-index: var(--z-modal);
+  --dialog-backdrop-z-index: var(--z-modal-backdrop);
+}
+
+/* ========================================
+   Dropdown/Popover Component Overrides
+   ======================================== */
+
+.dropdown-menu,
+.popover {
+  /* Spacing */
+  --dropdown-content-padding: var(--space-4);
+  --dropdown-item-padding-x: var(--space-8);
+  --dropdown-item-padding-y: var(--space-6);
+  --dropdown-gap: var(--gap-1);
+
+  /* Border */
+  --dropdown-radius: var(--radius-md);
+  --dropdown-border-width: var(--border-width-thin);
+
+  /* Effects */
+  --dropdown-shadow: var(--shadow-dropdown);
+  --dropdown-transition: var(--transition-all);
+
+  /* Min width */
+  --dropdown-min-width: 220px;
+
+  /* Z-index */
+  --dropdown-z-index: var(--z-dropdown);
+}
+
+/* ========================================
+   Tooltip Component Overrides
+   ======================================== */
+
+.tooltip {
+  /* Spacing */
+  --tooltip-padding-x: var(--space-12);
+  --tooltip-padding-y: var(--space-6);
+
+  /* Typography */
+  --tooltip-font-size: var(--text-xs);
+  --tooltip-font-weight: var(--font-medium);
+
+  /* Border */
+  --tooltip-radius: var(--radius-md);
+
+  /* Effects */
+  --tooltip-shadow: var(--shadow-sm);
+
+  /* Max width */
+  --tooltip-max-width: 320px;
+
+  /* Z-index */
+  --tooltip-z-index: var(--z-tooltip);
+}
+
+/* ========================================
+   Alert Component Overrides
+   ======================================== */
+
+.alert {
+  /* Spacing */
+  --alert-padding: var(--space-16);
+  --alert-gap: var(--gap-12);
+
+  /* Border */
+  --alert-radius: var(--radius-lg);
+  --alert-border-width: var(--border-width-thin);
+
+  /* Icon */
+  --alert-icon-size: 20px;
+}
+
+/* ========================================
+   Checkbox/Radio Component Overrides
+   ======================================== */
+
+.checkbox {
+  /* Size */
+  --checkbox-size: 20px;
+
+  /* Border */
+  --checkbox-radius: var(--radius-sm);
+  --checkbox-border-width: var(--border-width-thin);
+
+  /* Transition */
+  --checkbox-transition: var(--transition-colors);
+}
+
+.radio {
+  /* Size */
+  --radio-size: 20px;
+
+  /* Border */
+  --radio-radius: var(--radius-full);
+  --radio-border-width: var(--border-width-thin);
+
+  /* Transition */
+  --radio-transition: var(--transition-colors);
+}
+
+/* ========================================
+   Switch Component Overrides
+   ======================================== */
+
+.switch {
+  /* Size */
+  --switch-width: 44px;
+  --switch-height: 24px;
+  --switch-thumb-size: 20px;
+
+  /* Border */
+  --switch-radius: var(--radius-full);
+
+  /* Transition */
+  --switch-transition: var(--transition-transform);
+}
+
+/* ========================================
+   Tabs Component Overrides
+   ======================================== */
+
+.tabs {
+  /* List */
+  --tabs-list-padding: var(--space-4);
+  --tabs-list-gap: var(--gap-4);
+
+  /* Trigger */
+  --tabs-trigger-padding-x: var(--space-12);
+  --tabs-trigger-padding-y: var(--space-8);
+  --tabs-trigger-font-size: var(--text-sm);
+  --tabs-trigger-font-weight: var(--font-medium);
+  --tabs-trigger-radius: var(--radius-md);
+
+  /* Transition */
+  --tabs-transition: var(--transition-colors);
+}
+
+/* ========================================
+   Accordion Component Overrides
+   ======================================== */
+
+.accordion {
+  /* Trigger */
+  --accordion-trigger-padding-x: var(--space-16);
+  --accordion-trigger-padding-y: var(--space-16);
+  --accordion-trigger-font-size: var(--text-sm);
+  --accordion-trigger-font-weight: var(--font-medium);
+
+  /* Content */
+  --accordion-content-padding-x: var(--space-16);
+  --accordion-content-padding-y: var(--space-16);
+
+  /* Icon */
+  --accordion-icon-size: 16px;
+
+  /* Transition */
+  --accordion-transition: var(--transition-all);
+}
+
+/* ========================================
+   Avatar Component Overrides
+   ======================================== */
+
+.avatar {
+  /* Size */
+  --avatar-size: 40px;
+
+  /* Border */
+  --avatar-radius: var(--radius-full);
+  --avatar-ring-width: 2px;
+  --avatar-ring-offset: 2px;
+}
+
+.avatar-xs {
+  --avatar-size: 24px;
+}
+
+.avatar-sm {
+  --avatar-size: 32px;
+}
+
+.avatar-lg {
+  --avatar-size: 48px;
+}
+
+.avatar-xl {
+  --avatar-size: 64px;
+}
+
+.avatar-2xl {
+  --avatar-size: 96px;
+}
+
+/* ========================================
+   Table Component Overrides
+   ======================================== */
+
+.table {
+  /* Cell */
+  --table-cell-padding-x: var(--space-16);
+  --table-cell-padding-y: var(--space-12);
+
+  /* Header */
+  --table-header-font-weight: var(--font-semibold);
+  --table-header-border-width: var(--border-width-thick);
+
+  /* Border */
+  --table-border-width: var(--border-width-thin);
+}
+
+/* ========================================
+   Breadcrumb Component Overrides
+   ======================================== */
+
+.breadcrumb {
+  /* Gap */
+  --breadcrumb-gap: var(--gap-4);
+
+  /* Typography */
+  --breadcrumb-font-size: var(--text-sm);
+
+  /* Separator */
+  --breadcrumb-separator-size: 16px;
+}
+
+/* ========================================
+   Pagination Component Overrides
+   ======================================== */
+
+.pagination {
+  /* Gap */
+  --pagination-gap: var(--gap-2);
+
+  /* Item */
+  --pagination-item-size: 36px;
+  --pagination-item-radius: var(--radius-md);
+  --pagination-item-font-size: var(--text-sm);
+  --pagination-item-font-weight: var(--font-medium);
+}
+
+/* ========================================
+   Skeleton Component Overrides
+   ======================================== */
+
+.skeleton {
+  /* Border */
+  --skeleton-radius: var(--radius-md);
+
+  /* Animation */
+  --skeleton-animation-duration: var(--duration-slower);
+}
+
+/* ========================================
+   Progress Component Overrides
+   ======================================== */
+
+.progress {
+  /* Height */
+  --progress-height: 8px;
+
+  /* Border */
+  --progress-radius: var(--radius-full);
+
+  /* Transition */
+  --progress-transition: var(--transition-transform);
+}
+
+.progress-sm {
+  --progress-height: 4px;
+}
+
+.progress-lg {
+  --progress-height: 12px;
+}
+
+/* ========================================
+   Slider Component Overrides
+   ======================================== */
+
+.slider {
+  /* Track */
+  --slider-track-height: 6px;
+
+  /* Thumb */
+  --slider-thumb-size: 20px;
+
+  /* Border */
+  --slider-radius: var(--radius-full);
+
+  /* Transition */
+  --slider-transition: var(--transition-transform);
+}
+
+/* ========================================
+   Toast Component Overrides
+   ======================================== */
+
+.toast {
+  /* Spacing */
+  --toast-padding: var(--space-16);
+  --toast-gap: var(--gap-12);
+
+  /* Border */
+  --toast-radius: var(--radius-lg);
+  --toast-border-width: var(--border-width-thin);
+
+  /* Effects */
+  --toast-shadow: var(--shadow-lg);
+
+  /* Max width */
+  --toast-max-width: 400px;
+
+  /* Z-index */
+  --toast-z-index: var(--z-toast);
+
+  /* Animation */
+  --toast-animation-duration: var(--duration-medium);
+}
+
+/* ========================================
+   Focus Ring (Global)
+   ======================================== */
+
+*:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+/* Remove default focus outline when focus-visible is used */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ========================================
+   State Overrides
+   ======================================== */
+
+/* Disabled state */
+[disabled],
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Loading state */
+.loading {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+/* Error state */
+.error {
+  --error-color: hsl(var(--destructive));
+  border-color: var(--error-color);
+  color: var(--error-color);
+}

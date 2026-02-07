@@ -1,0 +1,278 @@
+/**
+ * Design Tokens
+ * Auto-generated from Figma design system
+ * Do not edit manually - regenerate using token extraction script
+ */
+
+:root {
+  /* ========================================
+     Typography Tokens
+     ======================================== */
+
+  /* Font Families */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace;
+
+  /* Font Sizes */
+  --text-xs: 12px;        /* 0.75rem */
+  --text-sm: 14px;        /* 0.875rem */
+  --text-base: 16px;      /* 1rem */
+  --text-lg: 18px;        /* 1.125rem */
+  --text-xl: 20px;        /* 1.25rem */
+  --text-2xl: 24px;       /* 1.5rem */
+  --text-3xl: 30px;       /* 1.875rem */
+  --text-4xl: 36px;       /* 2.25rem */
+  --text-5xl: 42px;       /* 2.625rem */
+  --text-6xl: 49px;       /* 3.0625rem */
+  --text-7xl: 72px;       /* 4.5rem */
+
+  /* Additional sizes from Figma */
+  --text-13: 13px;        /* 0.8125rem */
+  --text-22: 22px;        /* 1.375rem */
+
+  /* Font Weights */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Line Heights - Relative (percentage-based) */
+  --leading-none: 1;                    /* 100% */
+  --leading-tight: 1.01;                /* 100.99% */
+  --leading-snug: 1.1;                  /* 110% */
+  --leading-normal: 1.24;               /* 124% */
+  --leading-relaxed: 1.29;              /* 128.53% */
+  --leading-loose: 1.32;                /* 131.81% */
+
+  /* Line Heights - Fixed (pixel-based for specific use cases) */
+  --leading-fixed-14: 14.52px;
+  --leading-fixed-16: 16px;
+  --leading-fixed-20: 20px;
+  --leading-fixed-24: 24px;
+  --leading-fixed-28: 28px;
+  --leading-fixed-32: 32px;
+  --leading-fixed-36: 36px;
+  --leading-fixed-40: 40px;
+  --leading-fixed-44: 44px;
+
+  /* Letter Spacing */
+  --tracking-tight: -0.4px;
+  --tracking-normal: 0px;
+
+  /* ========================================
+     Spacing Tokens
+     ======================================== */
+
+  /* Base spacing scale (padding values from Figma) */
+  --space-0: 0px;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-3: 3px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-14: 14px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-36: 36px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-96: 96px;
+  --space-144: 144px;
+
+  /* Gap values (for flexbox/grid layouts) */
+  --gap-1: 2px;
+  --gap-2: 4px;
+  --gap-3: 6px;
+  --gap-4: 8px;
+  --gap-5: 10px;
+  --gap-6: 12px;
+  --gap-7: 14px;
+  --gap-8: 16px;
+  --gap-10: 20px;
+  --gap-12: 24px;
+  --gap-14: 28px;
+  --gap-16: 32px;
+  --gap-18: 36px;
+  --gap-20: 40px;
+  --gap-24: 48px;
+  --gap-28: 56px;
+
+  /* ========================================
+     Border Radius Tokens
+     ======================================== */
+
+  --radius-none: 0px;
+  --radius-sm: 2px;       /* 0.125rem */
+  --radius-md: 4px;       /* 0.25rem */
+  --radius-DEFAULT: 6px;  /* 0.375rem - matches shadcn default of 0.625rem adjusted */
+  --radius-lg: 8px;       /* 0.5rem */
+  --radius-xl: 12px;      /* 0.75rem */
+  --radius-2xl: 16px;     /* 1rem */
+  --radius-3xl: 24px;     /* 1.5rem */
+  --radius-full: 9999px;  /* Full circle/pill shape */
+
+  /* Special radius values from Figma */
+  --radius-subtle: 0.8px;
+  --radius-card: 5px;
+
+  /* ========================================
+     Shadow Tokens (Effects)
+     ======================================== */
+
+  /* Base Shadows */
+  --shadow-sm: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  --shadow-base: 0px 4px 6px 0px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-2xl: 0px 50px 100px -20px rgba(0, 0, 0, 0.5);
+  --shadow-none: none;
+
+  /* Component-specific shadows from Figma */
+  --shadow-button: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  --shadow-dialog: 0px 4px 6px -4px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-dropdown: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-popover: 0px 4px 6px 0px rgba(0, 0, 0, 0.05);
+
+  /* Inner shadows */
+  --shadow-inner: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+
+  /* ========================================
+     Border Width Tokens
+     ======================================== */
+
+  --border-width-none: 0px;
+  --border-width-thin: 1px;
+  --border-width-DEFAULT: 1px;
+  --border-width-thick: 2px;
+
+  /* ========================================
+     Color Tokens (Semantic - shadcn/ui compatible)
+     ======================================== */
+
+  /* Base Colors - Using HSL for shadcn/ui compatibility */
+  --background: 0 0% 100%;           /* #ffffff */
+  --foreground: 0 0% 3.9%;           /* #0a0a0a */
+
+  /* Card */
+  --card: 0 0% 100%;                 /* #ffffff */
+  --card-foreground: 0 0% 3.9%;      /* #0a0a0a */
+
+  /* Popover */
+  --popover: 0 0% 100%;              /* #ffffff */
+  --popover-foreground: 0 0% 3.9%;  /* #0a0a0a */
+
+  /* Primary */
+  --primary: 0 0% 9%;                /* #171717 */
+  --primary-foreground: 0 0% 98%;    /* #fafafa */
+
+  /* Secondary */
+  --secondary: 0 0% 96.1%;           /* #f5f5f5 */
+  --secondary-foreground: 0 0% 9%;   /* #171717 */
+
+  /* Muted */
+  --muted: 0 0% 96.1%;               /* #f5f5f5 */
+  --muted-foreground: 0 0% 45.1%;    /* #737373 */
+
+  /* Accent */
+  --accent: 0 0% 96.1%;              /* #f5f5f5 */
+  --accent-foreground: 0 0% 9%;      /* #171717 */
+
+  /* Destructive */
+  --destructive: 0 84.2% 60.2%;      /* #ef4444 */
+  --destructive-foreground: 0 0% 98%; /* #fafafa */
+
+  /* Border */
+  --border: 0 0% 89.8%;              /* #e5e5e5 */
+  --input: 0 0% 89.8%;               /* #e5e5e5 */
+
+  /* Ring (focus outline) */
+  --ring: 0 0% 3.9%;                 /* #0a0a0a */
+
+  /* Chart Colors */
+  --chart-1: 12 76% 61%;             /* #f97316 */
+  --chart-2: 173 58% 39%;            /* #14b8a6 */
+  --chart-3: 197 37% 24%;            /* #0ea5e9 */
+  --chart-4: 43 74% 66%;             /* #fbbf24 */
+  --chart-5: 27 87% 67%;             /* #fb923c */
+
+  /* ========================================
+     Animation/Transition Tokens
+     ======================================== */
+
+  /* Transition Durations */
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-medium: 300ms;
+  --duration-slow: 500ms;
+
+  /* Transition Timing Functions */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Common Transitions */
+  --transition-colors: color var(--duration-base) var(--ease-in-out),
+                       background-color var(--duration-base) var(--ease-in-out),
+                       border-color var(--duration-base) var(--ease-in-out);
+  --transition-opacity: opacity var(--duration-base) var(--ease-in-out);
+  --transition-transform: transform var(--duration-base) var(--ease-in-out);
+  --transition-all: all var(--duration-base) var(--ease-in-out);
+
+  /* ========================================
+     Z-Index Scale
+     ======================================== */
+
+  --z-base: 0;
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}
+
+/* ========================================
+   Dark Mode Overrides
+   ======================================== */
+
+.dark {
+  --background: 0 0% 3.9%;           /* #0a0a0a */
+  --foreground: 0 0% 98%;            /* #fafafa */
+
+  --card: 0 0% 3.9%;                 /* #0a0a0a */
+  --card-foreground: 0 0% 98%;       /* #fafafa */
+
+  --popover: 0 0% 3.9%;              /* #0a0a0a */
+  --popover-foreground: 0 0% 98%;    /* #fafafa */
+
+  --primary: 0 0% 98%;               /* #fafafa */
+  --primary-foreground: 0 0% 9%;     /* #171717 */
+
+  --secondary: 0 0% 14.9%;           /* #262626 */
+  --secondary-foreground: 0 0% 98%;  /* #fafafa */
+
+  --muted: 0 0% 14.9%;               /* #262626 */
+  --muted-foreground: 0 0% 63.9%;    /* #a3a3a3 */
+
+  --accent: 0 0% 14.9%;              /* #262626 */
+  --accent-foreground: 0 0% 98%;     /* #fafafa */
+
+  --destructive: 0 62.8% 30.6%;      /* #7f1d1d */
+  --destructive-foreground: 0 0% 98%; /* #fafafa */
+
+  --border: 0 0% 14.9%;              /* #262626 */
+  --input: 0 0% 14.9%;               /* #262626 */
+
+  --ring: 0 0% 83.1%;                /* #d4d4d4 */
+}

@@ -226,7 +226,7 @@ export default function AspectRatioPage() {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <AspectRatio ratio={16 / 9} className="bg-black rounded-lg overflow-hidden">
+            <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg overflow-hidden">
               <div className="flex items-center justify-center h-full relative">
                 <img
                   src="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=800&dpr=2&q=80"
@@ -234,11 +234,11 @@ export default function AspectRatioPage() {
                   className="h-full w-full object-cover opacity-70"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="flex items-center justify-center w-16 h-16 bg-white/90 rounded-full hover:bg-white transition-colors">
-                    <Play className="h-8 w-8 text-black ml-1" fill="currentColor" />
+                  <button className="flex items-center justify-center w-16 h-16 bg-background/90 rounded-full hover:bg-background transition-colors">
+                    <Play className="h-8 w-8 text-foreground ml-1" fill="currentColor" />
                   </button>
                 </div>
-                <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center text-white text-sm">
+                <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center text-foreground text-sm">
                   <span>0:00 / 3:45</span>
                   <span>HD</span>
                 </div>

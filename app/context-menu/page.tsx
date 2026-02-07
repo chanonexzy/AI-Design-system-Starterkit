@@ -29,7 +29,7 @@ export default function ContextMenuPage() {
 
   return (
     <div className="min-h-screen bg-background p-14">
-      <div className="mx-auto max-w-[602px] rounded-3xl border bg-white p-14 shadow-sm">
+      <div className="mx-auto max-w-[602px] rounded-3xl border bg-card p-14 shadow-sm">
         {/* ── Header ────────────────────────────────────── */}
         <div className="flex items-start justify-between gap-4">
           <div className="flex flex-col gap-2">

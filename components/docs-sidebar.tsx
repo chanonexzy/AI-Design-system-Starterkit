@@ -6,6 +6,8 @@ import { cn } from '@/lib/utils'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Button } from '@/components/ui/button'
 import { Home, Box, FileText } from 'lucide-react'
+import { ThemeToggleWithLabel } from '@/components/theme-toggle'
+import { Separator } from '@/components/ui/separator'
 
 interface NavItem {
   title: string
@@ -21,6 +23,7 @@ const navigation: NavItem[] = [
       { title: 'Introduction', href: '/' },
       { title: 'Components Overview', href: '/components/overview' },
       { title: 'Interactive Demo', href: '/components' },
+      { title: 'Theme Switching', href: '/theme' },
     ],
   },
   {
@@ -126,7 +129,7 @@ export function DocsSidebar() {
       </ScrollArea>
 
       <div className="p-4 border-t shrink-0">
-        <div className="space-y-2">
+        <div className="space-y-3">
           <Link href="/">
             <Button variant="ghost" className="w-full justify-start" size="sm">
               <Home className="mr-2 h-4 w-4" />
@@ -139,6 +142,10 @@ export function DocsSidebar() {
               All Components
             </Button>
           </Link>
+          <Separator className="my-2" />
+          <div className="px-2 py-1">
+            <ThemeToggleWithLabel />
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Design Tokens */
+@import "../src/tokens/design-tokens.css";
+@import "../src/styles/shadcn-overrides.css";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -48,71 +52,75 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  /* Light Mode - Improved Contrast */
+  --background: oklch(1 0 0); /* Pure white */
+  --foreground: oklch(0.09 0 0); /* Darker text for better contrast */
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: oklch(0.09 0 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --popover-foreground: oklch(0.09 0 0);
+  --primary: oklch(0.15 0 0); /* Darker primary */
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.96 0 0); /* Slightly darker for visibility */
+  --secondary-foreground: oklch(0.09 0 0);
+  --muted: oklch(0.96 0 0);
+  --muted-foreground: oklch(0.45 0 0); /* Improved readability */
+  --accent: oklch(0.96 0 0);
+  --accent-foreground: oklch(0.09 0 0);
+  --destructive: oklch(0.55 0.26 27.325); /* Enhanced destructive color */
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.89 0 0); /* More visible borders */
+  --input: oklch(0.89 0 0);
+  --ring: oklch(0.15 0 0); /* Match primary for focus rings */
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-foreground: oklch(0.09 0 0);
+  --sidebar-primary: oklch(0.15 0 0);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.96 0 0);
+  --sidebar-accent-foreground: oklch(0.09 0 0);
+  --sidebar-border: oklch(0.89 0 0);
+  --sidebar-ring: oklch(0.15 0 0);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  /* Dark Mode - Enhanced Contrast */
+  --background: oklch(0.12 0 0); /* Slightly lighter background */
+  --foreground: oklch(0.98 0 0); /* Brighter text */
+  --card: oklch(0.18 0 0); /* Lighter cards for depth */
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.18 0 0);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.95 0 0); /* Brighter primary */
+  --primary-foreground: oklch(0.12 0 0);
+  --secondary: oklch(0.24 0 0); /* More visible secondary */
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.22 0 0); /* Improved muted background */
+  --muted-foreground: oklch(0.65 0 0); /* Better muted text readability */
+  --accent: oklch(0.24 0 0);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.65 0.22 27.325); /* Brighter destructive */
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.3 0 0); /* Much more visible borders */
+  --input: oklch(0.25 0 0); /* Clearer input backgrounds */
+  --ring: oklch(0.85 0 0); /* Bright focus rings */
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar: oklch(0.15 0 0); /* Darker sidebar for distinction */
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(0.95 0 0);
+  --sidebar-primary-foreground: oklch(0.12 0 0);
+  --sidebar-accent: oklch(0.22 0 0);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
+  --sidebar-border: oklch(0.3 0 0);
+  --sidebar-ring: oklch(0.85 0 0);
 }
 
 @layer base {
@@ -121,5 +129,74 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Improved text rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Enhanced contrast and visibility */
+@layer components {
+  /* Better button contrast in dark mode */
+  .dark button[class*="bg-secondary"],
+  .dark [class*="bg-secondary"] {
+    @apply ring-1 ring-white/10;
+  }
+
+  /* Improved card borders */
+  .dark .border {
+    @apply border-white/15;
+  }
+
+  /* Enhanced input visibility */
+  .dark input,
+  .dark textarea,
+  .dark select {
+    @apply ring-1 ring-white/10;
+  }
+
+  /* Better hover states */
+  .dark [class*="hover\:bg-accent"]:hover {
+    @apply bg-white/10;
+  }
+
+  /* Improved muted text readability */
+  .dark .text-muted-foreground {
+    @apply opacity-90;
+  }
+
+  /* Enhanced separator visibility */
+  .dark [role="separator"],
+  .dark hr {
+    @apply opacity-20;
+  }
+
+  /* Better focus visibility */
+  .dark *:focus-visible {
+    @apply ring-2 ring-white/40 ring-offset-2 ring-offset-background;
+  }
+
+  /* Improved disabled state visibility */
+  .dark [disabled],
+  .dark [data-disabled] {
+    @apply opacity-40;
+  }
+
+  /* Light mode improvements */
+  *:focus-visible {
+    @apply ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* Better card depth in light mode */
+  .border-border {
+    @apply border-black/10;
+  }
+
+  /* Enhanced shadow for better depth perception */
+  .dark .shadow,
+  .dark .shadow-sm,
+  .dark .shadow-md,
+  .dark .shadow-lg {
+    @apply shadow-black/40;
   }
 }

@@ -1,0 +1,787 @@
+{
+  "overview": {
+    "fileName": "@shadcn_ui components with variables & Tailwind classes",
+    "totalVariables": 243,
+    "totalStyles": 154,
+    "extractedAt": "2026-02-07T06:48:50.911Z"
+  },
+  "topVariablesByCategory": {
+    "COLOR": [
+      {
+        "id": "VariableID:381:324",
+        "properties": [
+          "individualStrokeWeights.BORDER_TOP_WEIGHT",
+          "individualStrokeWeights.BORDER_BOTTOM_WEIGHT",
+          "individualStrokeWeights.BORDER_LEFT_WEIGHT",
+          "individualStrokeWeights.BORDER_RIGHT_WEIGHT",
+          "strokeWeight"
+        ],
+        "exampleNode": "🪩 Welcome!",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:373:398",
+        "properties": [
+          "fills.0"
+        ],
+        "exampleNode": "🪩 Welcome!",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:374:417",
+        "properties": [
+          "strokes.0",
+          "fills.0"
+        ],
+        "exampleNode": "🪩 Welcome!",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:374:416",
+        "properties": [
+          "fills.0",
+          "strokes.0"
+        ],
+        "exampleNode": "Hi!",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:402:601",
+        "properties": [
+          "fills.0",
+          "textRangeFills.1",
+          "strokes.0",
+          "textRangeFills.0"
+        ],
+        "exampleNode": "Thanks so much for choosing to use this file — whether you're here to speed up your workflow, find inspiration, or just poke around, I hope it makes your design process smoother (and more fun!). I actually use this exact kit in my own daily design work. That was a big part of why I decided to build it into a full library and share it — I figured, if it helps me stay organized and efficient, maybe it can help others too. So here it is, out in the wild, ready for you to tweak, remix, or use as-is. 💛",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:381:325",
+        "properties": [
+          "strokeWeight"
+        ],
+        "exampleNode": "Line 3",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:90:179",
+        "properties": [
+          "strokes.0"
+        ],
+        "exampleNode": "Accordion / Prototype Components",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:626:3622",
+        "properties": [
+          "individualStrokeWeights.BORDER_TOP_WEIGHT",
+          "individualStrokeWeights.BORDER_BOTTOM_WEIGHT",
+          "individualStrokeWeights.BORDER_LEFT_WEIGHT",
+          "individualStrokeWeights.BORDER_RIGHT_WEIGHT",
+          "strokeWeight"
+        ],
+        "exampleNode": "Icon",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:595:475",
+        "properties": [
+          "strokeWeight",
+          "individualStrokeWeights.BORDER_TOP_WEIGHT",
+          "individualStrokeWeights.BORDER_BOTTOM_WEIGHT",
+          "individualStrokeWeights.BORDER_LEFT_WEIGHT",
+          "individualStrokeWeights.BORDER_RIGHT_WEIGHT"
+        ],
+        "exampleNode": "Vector",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:932",
+        "properties": [
+          "individualStrokeWeights.BORDER_BOTTOM_WEIGHT"
+        ],
+        "exampleNode": "Button",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:381:885",
+        "properties": [
+          "fills.0"
+        ],
+        "exampleNode": "Buttons",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:381:335",
+        "properties": [
+          "strokes.0",
+          "fills.0"
+        ],
+        "exampleNode": "Vector",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:402:715",
+        "properties": [
+          "fills.0"
+        ],
+        "exampleNode": "State=Alert dialog",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:424:349",
+        "properties": [
+          "fills.0",
+          "strokes.0"
+        ],
+        "exampleNode": "Buttons",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1049:336",
+        "properties": [
+          "fills.0",
+          "strokes.0"
+        ],
+        "exampleNode": "Button",
+        "usageCount": 3
+      }
+    ],
+    "SPACING": [
+      {
+        "id": "VariableID:381:513",
+        "properties": [
+          "itemSpacing"
+        ],
+        "exampleNode": "🪩 Welcome!",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:90:476",
+        "properties": [
+          "paddingLeft",
+          "paddingTop",
+          "paddingRight",
+          "paddingBottom"
+        ],
+        "exampleNode": "🪩 Welcome!",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:381:575",
+        "properties": [
+          "itemSpacing",
+          "gridRowGap",
+          "gridColumnGap",
+          "paddingLeft",
+          "paddingTop",
+          "paddingRight",
+          "paddingBottom",
+          "counterAxisSpacing"
+        ],
+        "exampleNode": "Component description",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1112",
+        "properties": [
+          "letterSpacing.0"
+        ],
+        "exampleNode": "Hi!",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:626:3629",
+        "properties": [
+          "itemSpacing"
+        ],
+        "exampleNode": "Component description",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:455:677",
+        "properties": [
+          "itemSpacing"
+        ],
+        "exampleNode": "Frame 27",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:ae4c1299660a514d2fff67a366d384160aea3158/253:456",
+        "properties": [
+          "paddingLeft",
+          "paddingTop",
+          "paddingRight",
+          "paddingBottom"
+        ],
+        "exampleNode": "Accordion / Prototype Components",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:381:495",
+        "properties": [
+          "itemSpacing",
+          "counterAxisSpacing"
+        ],
+        "exampleNode": "Section",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:90:475",
+        "properties": [
+          "paddingLeft",
+          "paddingTop",
+          "paddingRight",
+          "paddingBottom"
+        ],
+        "exampleNode": "Wrapper",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+        "properties": [
+          "paddingTop",
+          "paddingBottom"
+        ],
+        "exampleNode": "State=Default",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+        "properties": [
+          "paddingRight"
+        ],
+        "exampleNode": "Question",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:cd0dd96629eb2be4bbf33cc4f2db3f1a63b61129/264:9",
+        "properties": [
+          "paddingBottom"
+        ],
+        "exampleNode": "Answer",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:381:520",
+        "properties": [
+          "itemSpacing"
+        ],
+        "exampleNode": "Buttons",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:90:408",
+        "properties": [
+          "paddingLeft",
+          "paddingRight"
+        ],
+        "exampleNode": "Buttons",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:5c02707f752b0366247d700f33fcda084da35fe2/249:437",
+        "properties": [
+          "paddingLeft",
+          "paddingRight"
+        ],
+        "exampleNode": "Default",
+        "usageCount": 3
+      }
+    ],
+    "TYPOGRAPHY": [
+      {
+        "id": "VariableID:1043:1089",
+        "properties": [
+          "lineHeight.0"
+        ],
+        "exampleNode": "Hi!",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1102",
+        "properties": [
+          "fontWeight.0"
+        ],
+        "exampleNode": "Hi!",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1120",
+        "properties": [
+          "fontFamily.0"
+        ],
+        "exampleNode": "Hi!",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1119",
+        "properties": [
+          "fontSize.0"
+        ],
+        "exampleNode": "Hi!",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1095",
+        "properties": [
+          "lineHeight.0"
+        ],
+        "exampleNode": "Thanks so much for choosing to use this file — whether you're here to speed up your workflow, find inspiration, or just poke around, I hope it makes your design process smoother (and more fun!). I actually use this exact kit in my own daily design work. That was a big part of why I decided to build it into a full library and share it — I figured, if it helps me stay organized and efficient, maybe it can help others too. So here it is, out in the wild, ready for you to tweak, remix, or use as-is. 💛",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1103",
+        "properties": [
+          "fontWeight.0",
+          "fontWeight.1"
+        ],
+        "exampleNode": "Thanks so much for choosing to use this file — whether you're here to speed up your workflow, find inspiration, or just poke around, I hope it makes your design process smoother (and more fun!). I actually use this exact kit in my own daily design work. That was a big part of why I decided to build it into a full library and share it — I figured, if it helps me stay organized and efficient, maybe it can help others too. So here it is, out in the wild, ready for you to tweak, remix, or use as-is. 💛",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1114",
+        "properties": [
+          "fontSize.0"
+        ],
+        "exampleNode": "Thanks so much for choosing to use this file — whether you're here to speed up your workflow, find inspiration, or just poke around, I hope it makes your design process smoother (and more fun!). I actually use this exact kit in my own daily design work. That was a big part of why I decided to build it into a full library and share it — I figured, if it helps me stay organized and efficient, maybe it can help others too. So here it is, out in the wild, ready for you to tweak, remix, or use as-is. 💛",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1100",
+        "properties": [
+          "fontWeight.0"
+        ],
+        "exampleNode": "This kit uses Tailwind CSS utility class names for consistent color and spacing references. If you’re not familiar with Tailwind, I recommend checking out their documentation — or you can use this handy cheatsheet to get started.",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1115",
+        "properties": [
+          "lineHeight.0"
+        ],
+        "exampleNode": "Color Variables",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1077",
+        "properties": [
+          "fontSize.0"
+        ],
+        "exampleNode": "Color Variables",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1096",
+        "properties": [
+          "lineHeight.0"
+        ],
+        "exampleNode": "Title",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1088",
+        "properties": [
+          "fontSize.0"
+        ],
+        "exampleNode": "Title",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1107",
+        "properties": [
+          "fontWeight.0"
+        ],
+        "exampleNode": "Alert description",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1093",
+        "properties": [
+          "lineHeight.0"
+        ],
+        "exampleNode": "Are you absolutely sure?",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:1083",
+        "properties": [
+          "fontSize.0"
+        ],
+        "exampleNode": "Are you absolutely sure?",
+        "usageCount": 3
+      }
+    ],
+    "BORDER_RADIUS": [
+      {
+        "id": "VariableID:90:558",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "🪩 Welcome!",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:90:556",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Screenshot 2025-06-26 at 23.47.57 2",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:90:554",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Buttons",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:90:555",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Default",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:90:559",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Circle",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1060:3577",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Type=Secondary, State=Hover",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:90:552",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Item",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:5e6776342e0d6487a7564a34b0d1a3acf7d3e89f/235:13",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Sunday",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:90:553",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Wrapper",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:504:75",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Input",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:504:76",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Badge",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:5acd196770a6355e893ea7b8853956512c6ce660/235:29",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Button",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:d5c4eea9a4badb4f5d1a0a0afa2280a8527094df/235:8",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Wrapper",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:797",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Box",
+        "usageCount": 3
+      },
+      {
+        "id": "VariableID:1043:757",
+        "properties": [
+          "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+          "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+        ],
+        "exampleNode": "Box",
+        "usageCount": 3
+      }
+    ]
+  },
+  "stylesByCategory": {
+    "Text-xs": {
+      "count": 9,
+      "samples": [
+        "Text-xs/Black",
+        "Text-xs/Extra Bold",
+        "Text-xs/Bold"
+      ]
+    },
+    "Text-sm": {
+      "count": 9,
+      "samples": [
+        "Text-sm/Black",
+        "Text-sm/Extra Bold",
+        "Text-sm/Bold"
+      ]
+    },
+    "Text-base": {
+      "count": 9,
+      "samples": [
+        "Text-base/Black",
+        "Text-base/Extra Bold",
+        "Text-base/Bold"
+      ]
+    },
+    "Text-lg": {
+      "count": 9,
+      "samples": [
+        "Text-lg/Black",
+        "Text-lg/Extra Bold",
+        "Text-lg/Bold"
+      ]
+    },
+    "Text-xl": {
+      "count": 9,
+      "samples": [
+        "Text-xl/Black",
+        "Text-xl/Extra Bold",
+        "Text-xl/Bold"
+      ]
+    },
+    "Text-2xl": {
+      "count": 9,
+      "samples": [
+        "Text-2xl/Black",
+        "Text-2xl/Extra Bold",
+        "Text-2xl/Bold"
+      ]
+    },
+    "Text-3xl": {
+      "count": 9,
+      "samples": [
+        "Text-3xl/Black",
+        "Text-3xl/Extra Bold",
+        "Text-3xl/Bold"
+      ]
+    },
+    "Text-4xl": {
+      "count": 9,
+      "samples": [
+        "Text-4xl/Black",
+        "Text-4xl/Extra Bold",
+        "Text-4xl/Bold"
+      ]
+    },
+    "Text-5xl": {
+      "count": 9,
+      "samples": [
+        "Text-5xl/Black",
+        "Text-5xl/Extra Bold",
+        "Text-5xl/Bold"
+      ]
+    },
+    "Text-6xl": {
+      "count": 9,
+      "samples": [
+        "Text-6xl/Black",
+        "Text-6xl/Extra Bold",
+        "Text-6xl/Bold"
+      ]
+    },
+    "Text-7xl": {
+      "count": 9,
+      "samples": [
+        "Text-7xl/Black",
+        "Text-7xl/Extra Bold",
+        "Text-7xl/Bold"
+      ]
+    },
+    "Text-8xl": {
+      "count": 9,
+      "samples": [
+        "Text-8xl/Black",
+        "Text-8xl/Extra Bold",
+        "Text-8xl/Bold"
+      ]
+    },
+    "Text-9xl": {
+      "count": 9,
+      "samples": [
+        "Text-9xl/Black",
+        "Text-9xl/Extra Bold",
+        "Text-9xl/Bold"
+      ]
+    },
+    "Box Shadow": {
+      "count": 11,
+      "samples": [
+        "Box Shadow/shadow-sm",
+        "Box Shadow/shadow-md",
+        "Box Shadow/shadow-lg"
+      ]
+    },
+    "Backdrop Blur": {
+      "count": 8,
+      "samples": [
+        "Backdrop Blur/backdrop-blur-none",
+        "Backdrop Blur/backdrop-blur-sm",
+        "Backdrop Blur/backdrop-blur"
+      ]
+    },
+    "Blur": {
+      "count": 8,
+      "samples": [
+        "Blur/blur-none",
+        "Blur/blur-sm",
+        "Blur/blur"
+      ]
+    },
+    "Shadow": {
+      "count": 1,
+      "samples": [
+        "Shadow"
+      ]
+    },
+    "text-sm": {
+      "count": 2,
+      "samples": [
+        "text-sm/medium",
+        "text-sm/regular"
+      ]
+    },
+    "Heading": {
+      "count": 2,
+      "samples": [
+        "Heading/Headline 2",
+        "Heading/Headline 4"
+      ]
+    },
+    "Neutral": {
+      "count": 2,
+      "samples": [
+        "Neutral/White",
+        "Neutral/Silver"
+      ]
+    },
+    "Body": {
+      "count": 2,
+      "samples": [
+        "Body/Medium/Body 2",
+        "Body/Regular/Body 3"
+      ]
+    },
+    "Default ": {
+      "count": 1,
+      "samples": [
+        "Default / White"
+      ]
+    }
+  },
+  "commonProperties": {
+    "colors": [
+      "individualStrokeWeights.BORDER_TOP_WEIGHT",
+      "individualStrokeWeights.BORDER_BOTTOM_WEIGHT",
+      "individualStrokeWeights.BORDER_LEFT_WEIGHT",
+      "individualStrokeWeights.BORDER_RIGHT_WEIGHT",
+      "strokeWeight",
+      "fills.0",
+      "strokes.0",
+      "textRangeFills.1",
+      "textRangeFills.0"
+    ],
+    "spacing": [
+      "itemSpacing",
+      "paddingLeft",
+      "paddingTop",
+      "paddingRight",
+      "paddingBottom",
+      "gridRowGap",
+      "gridColumnGap",
+      "counterAxisSpacing",
+      "letterSpacing.0"
+    ],
+    "typography": [
+      "lineHeight.0",
+      "fontWeight.0",
+      "fontFamily.0",
+      "fontSize.0",
+      "fontWeight.1"
+    ],
+    "borderRadius": [
+      "rectangleCornerRadii.RECTANGLE_TOP_LEFT_CORNER_RADIUS",
+      "rectangleCornerRadii.RECTANGLE_TOP_RIGHT_CORNER_RADIUS",
+      "rectangleCornerRadii.RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS",
+      "rectangleCornerRadii.RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS"
+    ]
+  }
+}
