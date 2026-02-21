@@ -60,6 +60,18 @@
   --tracking-tight: -0.4px;
   --tracking-normal: 0px;
 
+  /* Figma typography primitive aliases (size/*, leading/*, weight/*, family/*) */
+  --size-sm: 14px;         /* Figma: size/sm = 14   → matches --text-sm */
+  --size-base: 16px;       /* Figma: size/base = 16 → matches --text-base */
+  --size-lg: 18px;         /* Figma: size/lg = 18   → matches --text-lg */
+  --size-xl: 20px;         /* Figma: size/xl = 20   → matches --text-xl */
+  --leading-5: 20px;       /* Figma: leading/5 = 20 → matches --leading-fixed-20 */
+  --leading-6: 24px;       /* Figma: leading/6 = 24 → matches --leading-fixed-24 */
+  --leading-7: 28px;       /* Figma: leading/7 = 28 → matches --leading-fixed-28 */
+  --weight-normal: 400;    /* Figma: weight/normal = 400 */
+  --weight-medium: 500;    /* Figma: weight/medium = 500 */
+  --family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; /* Figma: family/sans = Inter */
+
   /* ========================================
      Spacing Tokens
      ======================================== */
@@ -87,23 +99,24 @@
   --space-96: 96px;
   --space-144: 144px;
 
-  /* Gap values (for flexbox/grid layouts) */
-  --gap-1: 2px;
-  --gap-2: 4px;
-  --gap-3: 6px;
-  --gap-4: 8px;
-  --gap-5: 10px;
-  --gap-6: 12px;
-  --gap-7: 14px;
-  --gap-8: 16px;
-  --gap-10: 20px;
-  --gap-12: 24px;
-  --gap-14: 28px;
-  --gap-16: 32px;
-  --gap-18: 36px;
-  --gap-20: 40px;
-  --gap-24: 48px;
-  --gap-28: 56px;
+  /* Gap values (4px grid — matches Tailwind default & Figma spacing scale) */
+  --gap-1: 4px;    /* Tailwind gap-1  = 0.25rem */
+  --gap-2: 8px;    /* Tailwind gap-2  = 0.5rem  — Figma: gap-2 = 8  */
+  --gap-3: 12px;   /* Tailwind gap-3  = 0.75rem — Figma: gap-3 = 12 */
+  --gap-4: 16px;   /* Tailwind gap-4  = 1rem    — Figma: gap-4 = 16 */
+  --gap-5: 20px;   /* Tailwind gap-5  = 1.25rem */
+  --gap-6: 24px;   /* Tailwind gap-6  = 1.5rem  */
+  --gap-7: 28px;   /* Tailwind gap-7  = 1.75rem */
+  --gap-8: 32px;   /* Tailwind gap-8  = 2rem    */
+  --gap-9: 36px;   /* Tailwind gap-9  = 2.25rem — Figma: gap-9 = 36 */
+  --gap-10: 40px;  /* Tailwind gap-10 = 2.5rem  */
+  --gap-12: 48px;  /* Tailwind gap-12 = 3rem    */
+  --gap-14: 56px;  /* Tailwind gap-14 = 3.5rem  */
+  --gap-16: 64px;  /* Tailwind gap-16 = 4rem    */
+  --gap-20: 80px;  /* Tailwind gap-20 = 5rem    */
+  --gap-24: 96px;  /* Tailwind gap-24 = 6rem    */
+  --gap-28: 112px; /* Tailwind gap-28 = 7rem    */
+  --gap-x-32: 128px; /* Figma: gap-x-32 = 128 (horizontal padding) */
 
   /* ========================================
      Border Radius Tokens
@@ -123,11 +136,15 @@
   --radius-subtle: 0.8px;
   --radius-card: 5px;
 
+  /* Figma-named radius aliases */
+  --rounded-md: 6px;       /* Figma: rounded-md = 6 */
+
   /* ========================================
      Shadow Tokens (Effects)
      ======================================== */
 
   /* Base Shadows */
+  --shadow-xs: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);  /* Figma: Box Shadow/shadow-xs */
   --shadow-sm: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   --shadow-base: 0px 4px 6px 0px rgba(0, 0, 0, 0.05);
   --shadow-md: 0px 10px 15px 0px rgba(0, 0, 0, 0.1);
@@ -153,6 +170,11 @@
   --border-width-thin: 1px;
   --border-width-DEFAULT: 1px;
   --border-width-thick: 2px;
+
+  /* Figma-named stroke aliases */
+  --stroke-1: 1px;         /* Figma: stroke-1 = 1 */
+  --stroke-2: 2px;         /* Figma: stroke-2 = 2 */
+  --border-b: 1px;         /* Figma: border-b = 1 */
 
   /* ========================================
      Color Tokens (Semantic - shadcn/ui compatible)
@@ -203,6 +225,11 @@
   --chart-3: 197 37% 24%;            /* #0ea5e9 */
   --chart-4: 43 74% 66%;             /* #fbbf24 */
   --chart-5: 27 87% 67%;             /* #fb923c */
+
+  /* Figma primitive color tokens */
+  --color-gray-12: #202020;          /* Figma: gray/12 */
+  --color-neutral-white: #FFFFFF;    /* Figma: Neutral/White */
+  --color-neutral-silver: #F5F7FA;   /* Figma: Neutral/Silver */
 
   /* ========================================
      Animation/Transition Tokens

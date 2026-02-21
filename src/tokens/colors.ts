@@ -10,8 +10,8 @@
  * Primary color palette (raw hex values from Figma)
  */
 export const rawColors = {
-  black: '#0a0a0a',        // Primary black from Figma
-  white: '#fafafa',        // Primary white from Figma
+  black: '#000000',        // Pure black from Figma (was #0a0a0a)
+  white: '#ffffff',        // Pure white from Figma (was #fafafa)
   gray: {
     50: '#fafafa',
     100: '#f5f5f5',
@@ -24,6 +24,12 @@ export const rawColors = {
     800: '#262626',
     900: '#171717',
     950: '#0a0a0a',
+    // Figma: gray/12
+    12: '#202020',
+  },
+  neutral: {
+    white: '#FFFFFF',      // Figma: Neutral/White
+    silver: '#F5F7FA',     // Figma: Neutral/Silver
   },
 } as const;
 
@@ -270,6 +276,7 @@ export const opacity = {
 
 // Type exports
 export type RawColor = keyof typeof rawColors;
+export type NeutralColor = keyof typeof rawColors.neutral;
 export type SemanticColorLight = keyof typeof semanticColors.light;
 export type SemanticColorDark = keyof typeof semanticColors.dark;
 export type ComponentColor = keyof typeof componentColors;
