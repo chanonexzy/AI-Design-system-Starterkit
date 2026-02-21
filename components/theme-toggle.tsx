@@ -1,10 +1,9 @@
 'use client'
 
 import * as React from 'react'
-import { Moon, Sun } from 'lucide-react'
+import { Moon, Sun, Palette } from 'lucide-react'
 import { useTheme } from 'next-themes'
-import { Switch } from '@/components/ui/switch'
-import { Label } from '@/components/ui/label'
+import { Button } from '@/components/ui/button'
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme()
@@ -17,26 +16,45 @@ export function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <div className="flex items-center space-x-2">
-        <Sun className="h-4 w-4 text-muted-foreground" />
-        <Switch disabled />
-        <Moon className="h-4 w-4 text-muted-foreground" />
-      </div>
+      <Button variant="outline" size="icon" disabled>
+        <Sun className="h-4 w-4" />
+      </Button>
     )
   }
 
-  const isDark = theme === 'dark'
+  const cycleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark')
+    } else if (theme === 'dark') {
+      setTheme('primary')
+    } else {
+      setTheme('light')
+    }
+  }
+
+  const getIcon = () => {
+    switch (theme) {
+      case 'light':
+        return <Sun className="h-4 w-4 text-yellow-500 transition-all" />
+      case 'dark':
+        return <Moon className="h-4 w-4 text-blue-400 transition-all" />
+      case 'primary':
+        return <Palette className="h-4 w-4 text-blue-500 transition-all" />
+      default:
+        return <Sun className="h-4 w-4 transition-all" />
+    }
+  }
 
   return (
-    <div className="flex items-center space-x-2">
-      <Sun className={`h-4 w-4 transition-colors ${!isDark ? 'text-yellow-500' : 'text-muted-foreground'}`} />
-      <Switch
-        checked={isDark}
-        onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
-        aria-label="Toggle theme"
-      />
-      <Moon className={`h-4 w-4 transition-colors ${isDark ? 'text-blue-500' : 'text-muted-foreground'}`} />
-    </div>
+    <Button
+      variant="outline"
+      size="icon"
+      onClick={cycleTheme}
+      aria-label={`Switch to ${theme === 'light' ? 'dark' : theme === 'dark' ? 'primary' : 'light'} theme`}
+      className="transition-all"
+    >
+      {getIcon()}
+    </Button>
   )
 }
 
@@ -51,35 +69,66 @@ export function ThemeToggleWithLabel() {
   if (!mounted) {
     return (
       <div className="flex items-center justify-between space-x-2">
-        <Label htmlFor="theme-toggle" className="text-sm font-medium">
-          Dark Mode
-        </Label>
+        <span className="text-sm font-medium">Theme</span>
         <div className="flex items-center space-x-2">
-          <Sun className="h-4 w-4 text-muted-foreground" />
-          <Switch disabled id="theme-toggle" />
-          <Moon className="h-4 w-4 text-muted-foreground" />
+          <Button variant="outline" size="icon" disabled>
+            <Sun className="h-4 w-4" />
+          </Button>
         </div>
       </div>
     )
   }
 
-  const isDark = theme === 'dark'
+  const cycleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark')
+    } else if (theme === 'dark') {
+      setTheme('primary')
+    } else {
+      setTheme('light')
+    }
+  }
+
+  const getThemeLabel = () => {
+    switch (theme) {
+      case 'light':
+        return 'Light'
+      case 'dark':
+        return 'Dark'
+      case 'primary':
+        return 'Primary'
+      default:
+        return 'Theme'
+    }
+  }
+
+  const getIcon = () => {
+    switch (theme) {
+      case 'light':
+        return <Sun className="h-4 w-4 text-yellow-500 transition-all" />
+      case 'dark':
+        return <Moon className="h-4 w-4 text-blue-400 transition-all" />
+      case 'primary':
+        return <Palette className="h-4 w-4 text-blue-500 transition-all" />
+      default:
+        return <Sun className="h-4 w-4 transition-all" />
+    }
+  }
 
   return (
     <div className="flex items-center justify-between space-x-2 w-full">
-      <Label htmlFor="theme-toggle" className="text-sm font-medium cursor-pointer">
-        Dark Mode
-      </Label>
-      <div className="flex items-center space-x-2">
-        <Sun className={`h-4 w-4 transition-colors ${!isDark ? 'text-yellow-500' : 'text-muted-foreground'}`} />
-        <Switch
-          id="theme-toggle"
-          checked={isDark}
-          onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
-          aria-label="Toggle theme"
-        />
-        <Moon className={`h-4 w-4 transition-colors ${isDark ? 'text-blue-500' : 'text-muted-foreground'}`} />
-      </div>
+      <span className="text-sm font-medium">
+        Theme: {getThemeLabel()}
+      </span>
+      <Button
+        variant="outline"
+        size="icon"
+        onClick={cycleTheme}
+        aria-label={`Switch to ${theme === 'light' ? 'dark' : theme === 'dark' ? 'primary' : 'light'} theme`}
+        className="transition-all"
+      >
+        {getIcon()}
+      </Button>
     </div>
   )
 }
